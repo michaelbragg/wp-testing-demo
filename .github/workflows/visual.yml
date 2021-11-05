@@ -17,6 +17,17 @@ jobs:
       - name: "Checks out the repository."
         uses: "actions/checkout@v2"
 
+      - name: "Sets up PHP with Composer."
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          tools: composer
+
+      - name: "Install Composer dependencies with no dev option."
+        run: |
+          composer install --no-dev --no-interaction --prefer-dist --no-suggest --no-scripts
+          composer dump-autoload --optimize --no-dev
+
       - name: "Setup NodeJS."
         uses: actions/setup-node@v2
         with:
