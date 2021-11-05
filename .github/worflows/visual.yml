@@ -1,0 +1,41 @@
+name: visual
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
+
+jobs:
+  percy:
+    name: "Visual Regression Testing"
+    runs-on: ubuntu-latest
+    step:
+
+      - name: "Checks out the repository."
+        uses: "actions/checkout@v2"
+
+      - name: "Setup NodeJS."
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: "Install NodeJS dependencies"
+        run: npm install
+
+      - name: "Logs debug information."
+        run: |
+          node --version
+          npm --version
+
+      - name: "Build test site."
+        run: |
+          npm run wp-env start
+
+      - name: "Run Percy Tests"
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        run: |
+          npx percy snapshot ./tests/visual/snapshots.yml --base-url=http://localhost:8888
