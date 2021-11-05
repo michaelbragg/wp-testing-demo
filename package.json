@@ -1,0 +1,28 @@
+{
+  "name": "wp-testing-demo",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/michaelbragg/wp-testing-demo.git"
+  },
+  "author": "Michael Bragg <email@michaelbragg.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/michaelbragg/wp-testing-demo",
+  "engines": {
+    "node": ">=0.14"
+  },
+  "scripts": {
+    "wp-env": "wp-env",
+    "cypress:open": "cypress open --config-file tests/e2e/cypress.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@wordpress/env": "4.1.2"
+  },
+  "browserslist": [
+    "> 2%",
+    "last 2 versions",
+    "not ie <= 11"
+  ]
+}

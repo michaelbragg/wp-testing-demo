@@ -1,0 +1,32 @@
+# System
+
+error_log
+.DS_Store
+
+## NodeJS
+/node_modules/*
+/package-lock.json
+
+# Server
+.env
+.env.*
+*.env
+!/example.env
+*.log
+.wp-env.override.json
+
+# Applications
+
+## Composer
+auth.json
+composer.lock
+/vendor
+/tools/*/vendor
+
+## WordPress
+
+## Plugins
+/wp-content/plugins/*
+
+## Themes
+/wp-content/themes/*
