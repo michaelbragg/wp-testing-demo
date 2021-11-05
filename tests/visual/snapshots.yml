@@ -1,2 +1,6 @@
 - name: Front Page
   url: http://localhost:8888/
+- name: Shop Archive
+  url: http://localhost:8888/shop/
+- name: Shop Single
+  url: http://localhost:8888/prodcut/hoodie/
