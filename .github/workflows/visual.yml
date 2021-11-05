@@ -12,7 +12,7 @@ jobs:
   percy:
     name: "Visual Regression Testing"
     runs-on: ubuntu-latest
-    step:
+    steps:
 
       - name: "Checks out the repository."
         uses: "actions/checkout@v2"
