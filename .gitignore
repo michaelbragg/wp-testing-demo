@@ -5,7 +5,6 @@ error_log
 
 ## NodeJS
 /node_modules/*
-/package-lock.json
 
 # Server
 .env

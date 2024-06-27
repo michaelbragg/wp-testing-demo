@@ -10,15 +10,15 @@
   "license": "ISC",
   "homepage": "https://github.com/michaelbragg/wp-testing-demo",
   "engines": {
-    "node": ">=0.14"
+    "node": ">=0.20"
   },
   "scripts": {
     "wp-env": "wp-env"
   },
   "dependencies": {},
   "devDependencies": {
-    "@percy/cli": "^1.0.0-beta.70",
-    "@wordpress/env": "10.2.0"
+    "@percy/cli": "^1.28.8",
+    "@wordpress/env": "^10.2.0"
   },
   "browserslist": [
     "> 2%",
