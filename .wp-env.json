@@ -1,5 +1,5 @@
 {
-  "phpVersion": "7.4",
+  "phpVersion": "8.3",
   "mappings": {
     "wp-content/plugins/woocommerce": "./wp-content/plugins/woocommerce",
     "wp-content/plugins/woocommerce-gateway-dummy": "./wp-content/plugins/woocommerce-gateway-dummy",
