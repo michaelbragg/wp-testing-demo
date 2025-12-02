@@ -18,7 +18,7 @@
   "dependencies": {},
   "devDependencies": {
     "@percy/cli": "^1.29.4",
-    "@wordpress/env": "^10.2.0"
+    "@wordpress/env": "^10.36.0"
   },
   "browserslist": [
     "> 2%",
