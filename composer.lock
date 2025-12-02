@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "611a42207219ffb2f28ad8ab0dfb2d40",
+    "content-hash": "a777b0d3759ebbae6891b794c2360da2",
     "packages": [
         {
             "name": "composer/installers",
@@ -208,15 +208,15 @@
         },
         {
             "name": "wpackagist-theme/storefront",
-            "version": "4.6.0",
+            "version": "4.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/storefront/",
-                "reference": "4.6.0"
+                "reference": "4.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/storefront.4.6.0.zip"
+                "url": "https://downloads.wordpress.org/theme/storefront.4.6.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
